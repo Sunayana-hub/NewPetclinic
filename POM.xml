@@ -2,30 +2,17 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
     <groupId>org.springframework.samples</groupId>
-    <artifactId>New-petclinic</artifactId>
-   <version>1.0.9-RELEASE</version>
+    <artifactId>New-NewPetclinic</artifactId>
+   <version>1.0.8-SNAPSHOTS</version>
 
     <name>Newpetclinic</name>
     <packaging>war</packaging>
-    <url>http://maven.apache.org</url>
+
 
  <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 	
-<distributionManagement>
-<repository>
-    <id>releases</id>
-    <!-- CHANGE HERE by your team nexus server -->
-    <url>http://13.233.102.181:8081/repository/maven-releases/</url>
-  </repository>
-  <snapshotRepository>
-    <id>snapshots</id>
-    <!-- CHANGE HERE by your team nexus server -->
-    <url>http://13.233.102.181:8081/repository/maven-snapshots/</url>
-  </snapshotRepository>
-</distributionManagement>
-
     <dependencyManagement>
         <!-- Import the maven Spring IO Platform Bill Of Materials (BOM) -->
         <dependencies>
@@ -40,11 +27,7 @@
     </dependencyManagement>
 
     <dependencies>
-        <!--<dependency>
-            <groupId>org.jadira.usertype</groupId>
-            <artifactId>usertype.core</artifactId>
-            <version>${jadira-usertype-core.version}</version>
-        </dependency>-->
+        
         <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-servlet-api</artifactId>
@@ -220,7 +203,7 @@
                             <outputDirectory>${project.basedir}/src/main/webapp/resources/css</outputDirectory>
                             <compress>true</compress>
                             <includes>
-                                <include>petclinic.less</include>
+                                <include>NewPetclinic.less</include>
                             </includes>
                         </configuration>
                         <executions>
